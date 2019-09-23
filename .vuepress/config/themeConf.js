@@ -1,5 +1,5 @@
 const sidebar = require("./sidebar-auto.js");
-
+//导航栏
 module.exports = {
   repo: "yaoliu/blog",
   navbar: true,
