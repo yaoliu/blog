@@ -1,0 +1,14 @@
+sudo: true
+git:
+  submodules: false
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - "10"
+install:
+  - npm install
+script:
+  - npm run check
+  - ./deploy.sh

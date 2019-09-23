@@ -1,0 +1,13 @@
+# npm
+package-lock.json
+node_modules
+
+# vscode
+.vscode
+
+# vuepress 
+dist
+.vuepress/config/sidebar-auto.js
+
+# 撰写中
+todo
