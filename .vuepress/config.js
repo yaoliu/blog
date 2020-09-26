@@ -2,7 +2,7 @@ const {
   mdConf,
   themeConf,
   localesConf,
-} = require('./config/')
+} = require('./config/');
 
 module.exports = {
   locales: localesConf,

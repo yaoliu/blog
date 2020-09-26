@@ -3,13 +3,10 @@
 # throw error
 set -e
 
-if [[  -z "$GITHUB_TOKEN" ]]; then
-  exit 0
-fi
-
 # build static
 npm run build
 cd .vuepress/dist
+echo 'liuyao.me' > CNAME
 
 git init
 git add -A
