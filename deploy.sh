@@ -4,8 +4,8 @@
 set -e
 
 # build static
-npm run build
-cd .vuepress/dist
+yarn docs:build
+cd docs/.vuepress/dist
 echo 'liuyao.me' > CNAME
 
 git init

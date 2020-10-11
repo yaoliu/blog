@@ -1,43 +1,37 @@
 {
   "name": "blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
-    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
-    "@vuepress/plugin-pwa": "^1.0.0-rc.1",
-    "chalk": "^2.4.2",
-    "commander": "^3.0.0",
-    "ejs": "^2.7.1",
-    "husky": "^2.3.0",
-    "nodemon": "^1.19.2",
-    "ora": "^3.4.0",
-    "prettier": "^1.17.1",
-    "tracer": "^1.0.1",
-    "vuepress": "^1.0.0-beta.2",
-    "vuepress-plugin-comment": "^0.5.4",
-    "vuepress-plugin-viewer": "^1.0.0"
+    "@vuepress-reco/theme-cli": "^1.0.6",
+    "@vuepress-reco/vuepress-plugin-rss": "^1.0.2",
+    "@vuepress/plugin-google-analytics": "^1.5.4",
+    "@vuepress/plugin-pwa": "^1.5.4",
+    "@vuepress/plugin-register-components": "^1.5.4",
+    "axios": "^0.20.0",
+    "chokidar": "^3.4.2",
+    "jquery": "^3.5.1",
+    "mkdirp": "^1.0.4",
+    "moment": "^2.28.0",
+    "vuepress": "^1.6.0",
+    "vuepress-plugin-boxx": "0.0.7",
+    "vuepress-plugin-container": "^2.1.5",
+    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "vuepress-plugin-smooth-scroll": "0.0.10",
+    "vuepress-theme-reco": "^1.5.7",
+    "whatwg-fetch": "^3.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.5.4",
+    "vuepress-plugin-auto-sidebar": "^1.5.0",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-ribbon": "^1.0.2"
+  },
   "scripts": {
-    "check": "node bin/prettier.js -t docs -c",
-    "lint": "node bin/prettier.js -t docs -l",
-    "check:notes": "node bin/prettier.js -t notes -c",
-    "lint:notes": "node bin/prettier.js -t notes -l",
-    "start": "npm run dev",
-    "dev": "nodemon --watch docs bin/sidebar.js & ./node_modules/.bin/vuepress dev .",
-    "build": "node bin/sidebar.js && ./node_modules/.bin/vuepress build .",
+    "start": "yarn run docs:dev",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "d": "sh deploy.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yaoliu/blog.git"
-  },
-  "author": "耀耀",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yaoliu/blog/issues"
-  },
-  "homepage": "https://github.com/yaoliu/blog#readme"
+  }
 }
