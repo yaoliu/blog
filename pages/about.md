@@ -16,13 +16,8 @@ single: true
 | nickname | 耀耀                                                      |
 | birthday | 1995.03.09                                                |
 
-## 工作经历
-
-1. 2015.11-2016.08 北京动力在线通信服务有限公司 运维工程师
-2. 2016.09-2019.09 北京闲徕互娱网络科技有限公司 运维开发工程师
 
 ## 联系方式
 
 - Email: liuyao@163.com
 - Github：https://github.com/yaoliu
-- Wechat: 17710909539
