@@ -60,5 +60,5 @@ module.exports = {
     markdown: {
         lineNumbers: true
     },
-    //plugins: pluginsConf
+    plugins: pluginsConf
 }
