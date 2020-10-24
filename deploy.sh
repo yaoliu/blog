@@ -4,6 +4,7 @@
 set -e
 
 # build static
+# liuyao.me
 yarn docs:build
 cd docs/.vuepress/dist
 echo 'liuyao.me' > CNAME
@@ -16,4 +17,4 @@ git push -f "https://github.com/yaoliu/blog.git" master:gh-pages
 
 cd -
 
-rm -rf .vuepress/dist
+rm -rf docs/.vuepress/dist
